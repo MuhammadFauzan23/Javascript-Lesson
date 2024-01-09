@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <h1>Function</h1>
+</body>
+<script>
+    // ------------------ ALERT ----------------------
+    alert(`Selamat Datang di tutorial`);
+    // -----------------------------------------------
+
+    // Membuat function biasa
+    function sayHello() {
+        document.writeln(`Hello World`);
+    }
+    sayHello(); // Memanggil function
+    // -----------------------------------------------
+
+    // -----------------------------------------------
+    // Function sebagai value
+    function mahasiswa(name) {
+        document.writeln(`<br> Nama saya adalah ${name}`);
+    }
+
+    let poltek = mahasiswa;
+    poltek("Muhammad Fauzan");
+
+    // -----------------------------------------------
+    // Membuat value parameter dari variabel
+    let nama = "Apel";
+    let rasa = "Manis";
+    function buah(nama, rasa) {
+        document.writeln(`<br> ${nama} rasanya ${rasa}`)
+    }
+    buah(nama, rasa);
+
+    // -----------------------------------------------
+    //Membuat anonymous function
+    let politeknik = function (mahasiwa) {
+        document.writeln(`Nama Saya ${mahasiswa}`);
+    }
+    mahasiswa("Muhammad Fauzan Alhakim");
+    // -----------------------------------------------
+
+    // Function didalam function
+
+    function matakuliah() {
+        function sks() {
+            document.writeln(`SKS matkul : 4`);
+        }
+        sks();
+    }
+    matakuliah();
+    // Untuk pemanggilan function didalam function harus memanggil
+    // Function yang didalam terus panggil function bagian luar 
+</script>
+
+</html>

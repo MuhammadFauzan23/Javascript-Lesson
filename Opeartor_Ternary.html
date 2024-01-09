@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opeartor Ternary</title>
+</head>
+
+<body>
+    <h1>Opeartor Ternary</h1>
+</body>
+<script>
+    // ------------------ ALERT ----------------------
+    alert(`Selamat Datang di tutorial`);
+    // -----------------------------------------------
+
+    // --------------- Cara operator biasa ------------------
+    const nilai = 80;
+    let ucapan;
+
+    if (nilai > 70) {
+        ucapan = "Selamat anda dinyatakan lulus";
+    } else {
+        ucapan = "Maaf anda tidak lulus";
+    }
+    document.writeln(`${ucapan} <br>`);
+
+    // --------------- Cara operator ternary ------------------
+    const angka = 40;
+    let ucap = nilai > 80 ? "Selamat anda dinyatakan lulus" : "Maaf anda tidak lulus";
+    document.writeln(`${ucap}`);
+</script>
+
+</html>

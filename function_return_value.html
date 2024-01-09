@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Return Value</title>
+</head>
+
+<body>
+    <h1>Function Return Value</h1>
+</body>
+<script>
+    // ------------------ ALERT ----------------------
+    alert(`Selamat Datang di tutorial`);
+    // -----------------------------------------------
+
+    // Membuat function
+    function kalkulator(x, y) {
+        const rumus = x - y;
+        return rumus;
+    }
+
+    // Memanggil function
+    hasil = kalkulator(85, 15);
+    document.writeln(`Hasil = ${hasil}`);
+    // -----------------------------------------------
+
+
+    function getValue(nilai) {
+        if (nilai > 90) {
+            return "A";
+        } else if (nilai > 80) {
+            return "B";
+        } else if (nilai > 70) {
+            return "C";
+        } else if (nilai > 60) {
+            return "D";
+        }
+    }
+    document.writeln(`<br>`);
+    document.writeln(`<h1>Function Return Value Lebih Dari Satu</h1>`);
+    document.writeln(`Nilai dari 88 mendapat predikat = ` + getValue(88));
+
+
+    document.writeln(`<br>`);
+    document.writeln(`<h1>Menghentikan Eksekusi Dengan Return</h1>`);
+
+    let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let searchArray = 5;
+
+    function checkArray(array, searchArray) {
+        for (let element of array) {
+            if (element === searchArray) {
+                return true;
+            }
+        }
+        return false;
+    }
+    eksekusi = checkArray(array, searchArray);
+    console.log(eksekusi);
+</script>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Prompt dan Alert</title>
+</head>
+
+<body>
+    <h1>Alert Prompt dan Alert</h1>
+</body>
+<script>
+    // ------------------ ALERT ----------------------
+    alert(`Selamat Datang di tutorial`);
+    // -----------------------------------------------
+
+    // ---------------Comment Prompt------------------
+    const konfirmasi = confirm(`Anda yakin masuk ? `);
+
+    if (konfirmasi) {
+        const nama = prompt(`Masukkan Nama : `);
+        const alamat = prompt(`Masukkan Alamat : `);
+        alert(`Nama saya ${nama} dan tinggal di  ${alamat}`);
+
+    } else {
+        document.writeln(`<p> Good Bye </p> `);
+    }
+    // -----------------------------------------------
+</script>
+
+</html>

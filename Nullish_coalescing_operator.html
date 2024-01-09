@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nullish Coalescing Operator</title>
+</head>
+
+<body>
+    <h1>Nullish Coalescing Operator</h1>
+</body>
+<script>
+    // ------------------ ALERT ----------------------
+    alert(`Selamat Datang di tutorial`);
+    // -----------------------------------------------
+
+    // -------- Biasa------------
+    let nilai;
+    let data = nilai;
+
+    if (data === undefined || data === null) {
+        data = "Nilai default";
+    }
+    document.writeln(`<h3>${data}</h3>`);
+
+    // ------Nullish Coalescing Operator------------
+
+    let angka;
+    let variable = angka ?? "Default";
+
+    document.writeln(`<h3>${variable}</h3>`);
+    // -----------------------------------------------
+</script>
+
+</html>

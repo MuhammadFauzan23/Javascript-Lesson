@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter</title>
+</head>
+
+<body>
+    <h1>Rest Parameter</h1>
+</body>
+<script>
+    // ------------------ ALERT ----------------------
+    alert(`Selamat Datang di tutorial`);
+    // -----------------------------------------------
+
+    // Membuat function rest parameter
+    function mahasiswa(name, ...data) {
+        let total = 0
+        for (const item of data) {
+            total += item;
+        }
+        document.writeln(`${name} dengan skor : ${total}`);
+    }
+
+    mahasiswa("Muhamad Fauzan", 1, 23, 15, 16, 100);
+    // -----------------------------------------------
+</script>
+
+</html>

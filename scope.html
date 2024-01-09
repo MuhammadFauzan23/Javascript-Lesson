@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+
+<body>
+    <h1>Scope</h1>
+</body>
+<script>
+    // ------------------ ALERT ----------------------
+    alert(`Selamat Datang di tutorial`);
+    // -----------------------------------------------
+
+    let nama = "Muhammad Fauzan"; // Global Scope
+
+    function mahasiswa() {
+        // Local Scope
+        document.writeln(`Nama saya ${nama}`)
+    }
+    mahasiswa();
+
+    // Global scope bisa diakses didalam local scope.
+    // Local Scope hanya bisa diakses di dalam daerah local Scope.
+</script>
+
+</html>

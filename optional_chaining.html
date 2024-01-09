@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>optional chaining</title>
+</head>
+
+<body>
+    <h1>optional chaining</h1>
+</body>
+<script>
+    // ------------------ ALERT ----------------------
+    alert(`Selamat Datang di tutorial`);
+    // -----------------------------------------------
+
+    // -------- Biasa------------
+    let data = {
+        provinsi: "Kepulauan Riau",
+    };
+
+    if (data !== undefined || data !== null) {
+        document.writeln(`<h3>${data.provinsi}</h3>`);
+    }
+
+    // ------optional chaining------------
+    const jurusan = {
+        prodi: {
+            kelas: "IF6D"
+        }
+    };
+    let kelas = jurusan?.prodi?.kelas;
+    document.writeln(`<h3>${kelas}</h3>`);
+
+    // -----------------------------------------------
+</script>
+
+</html>

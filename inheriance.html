@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritence Javascript (OOP)</title>
+</head>
+
+<body>
+    <h1>Inheritence</h1>
+</body>
+<script>
+    class jurusan { //superclass
+        constructor(prodi, kelas) {
+            this.prodi = prodi;
+            this.kelas = kelas;
+        }
+        sayHello(name) {
+            console.info(`<p> Teknik informatika mempunyai ${this.prodi} prodi dan kelas berjumlah ${this.kelas}. </p>`);
+        }
+    }
+
+    class informatika extends jurusan { //sub class -> turunan dari super class
+        sayInformatika(name) { // methode
+            console.info(`<p> Teknik ${name} adalah program studi dari jurusan ${this.name}. </p>`);
+        }
+    }
+
+    class animasi extends jurusan { //sub class -> turunan dari super class
+        sayAnimasi(named) { // methode
+            console.info(`<p> Teknik ${named} dalah program studi dari jurusan ${this.named}. </p>`);
+        }
+    }
+
+    // Manggil Method superclass
+    const jur = new jurusan("5", "6"); // Pada saat ini inisiasi dapat mengisi value juga 
+    jur.sayHello();
+
+    // Manggil Method sub class
+    const inf = new informatika(); //inisiasi konstruktor
+    inf.name = "informatika"; // Mengisi value konstruktor --> {$this.value}
+    inf.sayInformatika("INF"); // memanggil Methode dengan mengisi value --> ${value}
+
+    //Method Manggil sub class
+    const anm = new animasi(); //inisiasi konstruktor
+    anm.named = "animasi"; // Mengisi value konstruktor --> {$this.value}
+    anm.sayAnimasi("ANM"); // memanggil Methode dengan mengisi value --> ${value}
+
+
+</script>
+
+</html>

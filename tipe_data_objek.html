@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelatihan Javascript</title>
+</head>
+
+<body>
+    <h1>Tipe Data Objek</h1>
+</body>
+<script>
+    // Tipe data javascript yaitu Let dan Cost
+    const mahasiswa = {};
+    mahasiswa["nama"] = "Muhammad Fauzan";
+    mahasiswa["nim"] = "3312001118";
+    mahasiswa["prodi"] = "Teknik Informatika";
+
+    console.table(mahasiswa);
+
+    // -----------------------------------------------
+
+    const siswa = {};
+    siswa["nama"] = "Muhammad Fauzan";
+    siswa["nis"] = "3312001118";
+    siswa["kelas"] = "IPA";
+    siswa["matapelajaran"] = "Matematika Wajib";
+
+    delete siswa["matapelajaran"];
+    console.table(siswa);
+
+    // -----------------------------------------------
+
+    // Cara untuk mengakses data setiap objek
+    const mhs = {
+        nama: "Muhammad Fauzan Alhakim",
+        NIK: "331200",
+        Prodi: "Teknik Informatika"
+    }
+    console.table(`${mhs.nama}`);
+    console.table(`${mhs.NIK}`);
+    console.table(`${mhs.Prodi}`);
+
+    // -----------------------------------------------
+    // -----------------------------------------------
+</script>
+
+</html>
